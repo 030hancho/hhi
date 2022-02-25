@@ -1,0 +1,124 @@
+html{overflow: hidden;}
+
+.wrap
+{
+    width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap2
+{
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* header */
+#header
+{
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    top: 0;
+    z-index: 100;
+}
+h1.logo
+{
+    float: left;
+    width: 160px;
+    height: 26px;
+    background: url(../img/icon/logo.png) no-repeat center;
+    margin: 30px;
+}
+.h_right{float: right;}
+.h_menu
+{
+    margin: 30px;
+    float: left;
+}
+.h_menu span
+{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}
+.h_menu span:nth-child(2){margin: 8px 0;}
+.h_sch
+{
+    width: 25px;
+    height: 25px;
+    margin-top: 30px;
+    margin-right: 50px;
+    background: url(../img/icon/sch.png);
+    float: right;
+}
+.gnb{position: relative; display: none;}
+.gnb.on{display: block;}
+
+.gnbwrap
+{
+    width: 100vw;
+    height: 100vh;
+    vertical-align: middle;
+    transition: all 0.3s;
+    background: radial-gradient(circle, rgba(33,43,73,1) 0%, rgba(22,31,45,1) 88%);
+    text-align: center;
+    transform: translateX(100vw);
+    transition: all 0.5s;
+    padding-top: 30vh;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    display: block;
+    position: fixed;
+    z-index: 11;
+}
+.gnbwrap p
+{
+    color: #fff;
+    font: bold 32px 'notosanskr';
+    padding: 10px;
+}
+.gnbwrap p:hover{color: #FBBA00;}
+.gnbwrap.on{transform: translateX(0vw);}
+.gnbwrap.next{transform: translateX(-30vw);}
+
+.lnbwrap ul
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    transform: translateX(100vw);
+    position: fixed;
+    top: 0;
+    right: 0;
+    font: 500 20px 'notosanskr';
+    text-align: center;
+    padding: 10px;
+    z-index: 12;
+    box-sizing: border-box;
+}
+.lnbwrap ul li{padding: 10px;}
+
+.lnbwrap ul:nth-child(1){padding: 33vh 44vw 0 0;}
+.lnbwrap ul:nth-child(2){padding: 40vh 44vw 0 0;}
+.lnbwrap ul:nth-child(3){padding: 35vh 44vw 0 0;}
+.lnbwrap ul:nth-child(4){padding: 33vh 44vw 0 0;}
+.lnbwrap ul:nth-child(5){padding: 36vh 44vw 0 0;}
+.lnbwrap ul:nth-child(6){padding: 35vh 44vw 0 0;}
+
+ul.on{transform: translateX(45vw);}
+.lnbwrap ul li:hover a{color: #FBBA00;}
+
+.lnbclose
+{
+    z-index: 13;
+    border: none;
+    background: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font: 300 32px 'notosanskr';
+}
